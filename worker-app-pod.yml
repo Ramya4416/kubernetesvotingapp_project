@@ -1,0 +1,13 @@
+---
+apiVersion: vi
+kind: Pod
+metadata:
+  name: workerapp-pod
+  labels:
+    name: worker-app-pod
+    app: demo-app-pod
+spec:
+  containers:
+    - name: worker-app
+      image: dockersamples/examplevotingapp_worker
+...
